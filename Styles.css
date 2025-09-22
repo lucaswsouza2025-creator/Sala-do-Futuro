@@ -1,0 +1,115 @@
+/* Importação da fonte do Google Fonts para um visual moderno */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Estilos gerais para o corpo do site */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5; /* Um cinza claro para um fundo suave */
+    color: #333; /* Cor de texto padrão */
+    line-height: 1.6;
+    margin: 0;
+    padding: 2rem;
+    text-align: center; /* Centraliza todo o conteúdo do corpo */
+}
+
+/* Estilos para os cabeçalhos */
+h1 {
+    font-weight: 700;
+    color: #000; /* Preto, como na bandeira de SP */
+    border-bottom: 2px solid #D62828; /* Vermelho para um toque de destaque */
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    font-weight: 600;
+    color: #333;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-weight: 600;
+    color: #555;
+    margin-top: 1.5rem;
+}
+
+/* Estilos para parágrafos */
+p {
+    max-width: 800px;
+    margin: 1rem auto; /* Centraliza parágrafos */
+}
+
+/* Estilos para imagens */
+img {
+    max-width: 150px; /* Limita o tamanho das imagens para não ficarem muito grandes */
+    height: auto;
+    margin: 1rem;
+}
+
+/* Estilos para listas (ul) */
+ul {
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+    list-style: none; /* Remove os marcadores padrão */
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #ffffff;
+    border-left: 5px solid #D62828; /* Barra vermelha para destaque */
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para tabelas */
+table {
+    max-width: 1000px;
+    margin: 2rem auto;
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Garante que as bordas da tabela sejam arredondadas */
+    text-align: left;
+}
+
+th, td {
+    padding: 1rem;
+}
+
+th {
+    background-color: #000; /* Preto para o cabeçalho */
+    color: #fff; /* Texto branco */
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Estilo para linhas alternadas (efeito zebra) para facilitar a leitura */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fundo cinza claro para linhas pares */
+}
+
+tr:nth-child(odd) {
+    background-color: #fff; /* Fundo branco para linhas ímpares */
+}
+
+/* Estilos para links */
+a {
+    color: #D62828; /* Vermelho para links */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #000; /* Muda a cor ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+img {
+    width: 150px;
+    height: 150px;
+} 
