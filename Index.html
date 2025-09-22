@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sala do Futuro</title>
+    <title>Sala do Futuro 🏫🎒</title>
+    <link rel="stylesheet" href="./Styles/Style.css">
 </head>
 <body>
 
     <!--Apresentando e fazendo uma breve descrição do site. Principalmente é necessário ter div em cada um para complementar com o css-->
     <h1>Olá seja Bem-Vindo(a) a Sala do Futuro Paulista</h1>
-    <p>Neste site é possível os estudantes das escolas públicas de São Paulo, acompanharem e visualizarem todo o seu rendimento escolar dentro da plataforma!</p>
-    
-    <div class="Tópicos sobre o Site">
-
-        <h2>Com a Sala do Futuro é possível visualizar:</h2>
+    <p>Neste site é possível os estudantes das escolas públicas de São Paulo, acompanharem e visualizarem todo o seu rendimento escolar dentro da plataforma, buscando sempre o sucesso acadêmico dos alunos! 🧑‍🎓👩‍🎓</p>
+    <img src="./Imagens/Logo_Estado_SãoPaulo.png" alt="Estado de São Paulo">
+    <img src="./Imagens/Sala_do_Futuro_logo.png" alt="Sala do Futuro">
 
         <ul>
             <li>O boletim com as notas de cada disciplina;</li>
@@ -21,11 +20,8 @@
             <li>Agenda escolar com datas de provas, horário de aulas e eventos importantes marcados no dia;</li>
             <li>Materiais digitais completos de cada disciplina, disponível em formato de slides, servindo como uma material de apoio juntamente com o livro acadêmico.</li>
         </ul>
-
-    </div>
    
     <!--Criando uma tabela de números de faltas e o boletim nas disciplinas-->
-    <div class="Tabela_Frequência">
 
         <h2>Estudante, aqui abaixo você consegue ter a informação sobre as suas notas e frequência, em cada disciplina que fazem parte do currículo estudantil!</h2>
 
@@ -39,22 +35,50 @@
             </tr>
 
             <!--Notas para cada máteria-->
-            <th>
-                <td>Notas de cada disciplina sendo no mínimo 5 para ser aprovado</td>
-                <td>7</td>
-                <td>8</td>
-                <td>6</td>
-                <td>8</td> 
-            
-            <!--Número de frequência em cada disciplina-->
-            </th>
-                <td>Número total de faltas sendo no máximo 40 no bimestre</td>
-            <th>
+            <tr>
+                <td scope="row">Notas de cada disciplina sendo no mínimo 5 para ser aprovado</td>
+                <td scope="row">7</td>
+                <td scope="row">8</td>
+                <td scope="row">6</td>
+                <td scope="row" >8</td> 
+            </tr>
 
-            </th>
+               <!--Número de frequência em cada disciplina-->
+            <tr>
+                <td scope="row">Número total de faltas sendo no máximo 40 no bimestre</td>  
+                <td scope="row">4</td>
+                <td scope="row">5</td>
+                <td scope="row">7</td>
+                <td scope="row">5</td>
+            </tr>
         </table>
 
-    </div>
+                <p>Parábens, você foi aprovado em todas as disciplinas no 1ºBimestre🫱🎉</p>
+            
+            <!--Apenas em exemplo de agenda escolar-->
+            <h2>Agora, abaixo está as datas de algumas avaliações marcados no 2ºBimestre 📅</h2>
+
+            <table>
+                <tr>
+                    <th scope="col">Matématica</th>
+                    <th scope="col">Português</th>
+                    <th scope="col">História</th>
+                    <th scope="col">Física</th>
+                </tr>
+
+                <tr>
+                    <td scope="row">13 de Maio</td>
+                    <td scope="row">18 de Maio</td>
+                    <td scope="row">20 de Maio</td>
+                    <td scope="row">19 de Maio</td>
+                </tr>
+            </table>
     
+        <!--Materiais digitais em forma de apresentação-->
+        <h3>Materias digitais de forma de slides, mas lembrando que precisa abaixar apresentação, pelo menos por enquanto! Começando com português na parte das escolas literárias📖</h3>
+        
+        <h3>Português - Modernismo</h3>
+        <a href="./Apresentações/Modernismo.pptx">1ºGeração modernista no Brasil</a>
 </body>
 </html>
+
