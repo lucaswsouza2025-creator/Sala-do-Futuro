@@ -104,14 +104,13 @@ tr:nth-child(odd) {
 
 /* Estilos para links */
 a {
-    color: #D62828; /* Vermelho para links */
+    color: rgb(0, 26, 255); /* Vermelho para links */
     text-decoration: none; /* Remove o sublinhado */
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #000; /* Muda a cor ao passar o mouse */
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
