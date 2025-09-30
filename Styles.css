@@ -82,6 +82,10 @@ th, td {
     padding: 1rem;
 }
 
+td {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.555);
+}
+
 th {
     background-color: #000; /* Preto para o cabeçalho */
     color: #fff; /* Texto branco */
@@ -91,11 +95,11 @@ th {
 
 /* Estilo para linhas alternadas (efeito zebra) para facilitar a leitura */
 tr:nth-child(even) {
-    background-color: #f2f2f2; /* Fundo cinza claro para linhas pares */
+    background-color: white; /* Fundo cinza claro para linhas pares */
 }
 
 tr:nth-child(odd) {
-    background-color: #fff; /* Fundo branco para linhas ímpares */
+    background-color: white; /* Fundo branco para linhas ímpares */
 }
 
 /* Estilos para links */
