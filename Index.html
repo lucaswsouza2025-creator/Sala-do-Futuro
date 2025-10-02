@@ -8,17 +8,22 @@
 </head>
 <body>
 
+    <!--Explicação de cada tag html:
+        head: cabeçalho;
+        body: corpo;
+        footer: rodapé-->
+
     <!--Melhorias que eu preciso aplicar no projeto: construir um campo de feedbacks, e adicionar mais datas das avaliações bimestrais. Fazer principalmente mais algumas apresentações em PowerPoint, pelo menos os conteúdos do currículo das disciplinas de humanas, por exemplo, história e português!-->
 
     <!--Apresentando e fazendo uma breve descrição do site. Principalmente é necessário ter div em cada um para complementar com o css-->
     <h1>Olá seja Bem-Vindo(a) a Sala do Futuro Paulista! 🏫🎒</h1>
     <p>Neste site é possível os estudantes das escolas públicas de São Paulo, acompanharem e visualizarem todo o seu rendimento escolar dentro da plataforma, buscando sempre o sucesso acadêmico dos alunos.</p>
-    <p>Pelo que as informações apresentam, você está no 2° Bimestre do ano letivo. E o mais importante, você está no 3º Ano do ensino médio o último ano da escola! 😉🧑‍🎓👩‍🎓</p>
+    <p>Pelo que as informações apresentam, você está no 2° Bimestre do ano letivo. E o mais importante, você está no 3º Ano do ensino médio o último ano da escola! 😉</p>
 
     <img src="./Imagens/Logo_Estado_SãoPaulo.png" alt="Estado de São Paulo">
     <img src="./Imagens/Sala_do_Futuro_logo.png" alt="Sala do Futuro">
 
-        <h3>Alguns tópicos para entender melhor o pojeto desenvolvido 📚</h3>
+        <h2>Alguns tópicos para entender melhor o pojeto desenvolvido 📚</h2>
         <ul>
             <li>O boletim com as notas de cada disciplina;</li>
             <li>Número de frequência em cada máteria e quantidade total de aula dada no bimestre;</li>
@@ -28,13 +33,17 @@
    
         <!--Uma breve descrição do estudante-->
 
-        <h3>Informações sobre você! 😊</h3>
+        <h2>Informações do estudante</h2>
+        <p>Abaixo está apenas uma breve definição sobre você! 🧑‍🎓👩‍🎓</p>
 
-        <p>Cidade: Piracicaba</p>
-        <p>Estado: São Paulo</p>
-        <p>Escola: E.E Doutor Jorge Coury</p>
-        <p>Período: Integral</p>
-        <p>Ano Letivo: 2025</p>
+        <ul>
+            <li>Cidade: Piracicaba;</li>
+            <li>Estado: São Paulo;</li>
+            <li>Escola: E.E Dr. Jorge Coury;</li>
+            <li>Périodo da escola: Integral;</li>
+            <li>Curso Técnico: Desenvolvimento de Sistemas;</li>
+            <li>Turma: 3ºC</li>
+        </ul>
 
         <h2>Estudante, aqui abaixo você consegue ter a informação sobre as suas notas e frequência, em cada disciplina que fazem parte do currículo estudantil!</h2>
 
@@ -95,13 +104,49 @@
         <h2>Materiais digitais</h2>
         <p>Apresentações em forma de slides. Mas lembrando que precisa abaixar apresentação, pelo menos por enquanto, e os links para abaixar a apresentação estão sempre debaixo do título!</p>
 
-        <h3>Português - Literátura brasileira 📖</h3>
-        
-        <h4>Modernismo No Brasil</h4>
+        <h2>Português - Literátura brasileira 📖</h2>
+
+        <h3>Modernismo</h3>
         <a href="./Apresentações em PowerPoint/Modernismo.pptx">Modernismo 1º Geração</a>
 
-        <h2>Feedback</h2>
-        <p>Por favor, conte a sua experiência sobre o site criado. Se foi uma experiência positiva, conte-nós o que achou. Senão, se não foi agradável, fale-nós sobre possível melhorias.</p>
+        <h2>História</h2>
+
+        <h3>A Ditadura Militar no Brasil(1964 - 1985)</h3>
+
+        <div class="content-section">
+
+            <h2 id="feedback">Feedback</h2>
+
+            <p>Por favor, conte a sua experiência sobre o site criado. Se foi uma experiência positiva, conte-nos o que achou. Senão, se não foi agradável, fale-nos sobre possíveis melhorias.</p>
+
+            <form action="#" method="POST" class="feedback-form">
+
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentario">Comentário:</label>
+                    <textarea id="comentario" name="comentario" rows="5" placeholder="Seu comentário ou sugestão..." required></textarea>
+                </div>
+
+                <button type="submit">Enviar feedback</button>
+            </form>
+        </div>
+        
+        <!-- Rodapé -->
+        <footer>
+            <p>&copy; 2025 Sala do Futuro. Todos os direitos reservados.</p>
+        </footer>
+    
+    </body>
+    </html>
 
 </body>
 </html>
