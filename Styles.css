@@ -31,7 +31,7 @@ h2 {
 
 h3 {
     font-weight: 600;
-    color: #555;
+    color: red; /* O títulos em h3 estão destacados em vermelho */
     margin-top: 1.5rem;
 }
 
@@ -64,6 +64,20 @@ ul li {
     margin-bottom: 0.5rem;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Informações ul li {
+    background-color: #ffffff;
+    border-left: 5px solid black; /* Barra vermelha para destaque */
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+
+.Destaque h2 {
+    font-weight: 600;
+    color: red;
+    margin-top: 2rem;
 }
 
 /* Estilos para tabelas */
@@ -127,3 +141,57 @@ footer {
    color: #000;
 
 }
+
+/* Feedback do usuário, abixo esta cada passo da estilização! */
+
+/* Estilo geral do formulário */
+.feedback-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo dos grupos de formulário */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo dos rótulos */
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Estilo dos campos de entrada e textarea */
+  .feedback-form input[type="text"],
+  .feedback-form input[type="email"],
+  .feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo do botão de envio */
+  .feedback-form button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efeito hover no botão */
+  .feedback-form button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
