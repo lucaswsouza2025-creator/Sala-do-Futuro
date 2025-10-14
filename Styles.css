@@ -8,9 +8,9 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #f0f2f5; /* Um cinza claro para um fundo suave */
     color: #333; /* Cor de texto padrão */
-    line-height: 1.6;
-    margin: 0;
-    padding: 2rem;
+    line-height: 2.5;
+    margin: 2.5rem;
+    padding: 2.5rem;
     text-align: center; /* Centraliza todo o conteúdo do corpo */
 }
 
@@ -31,7 +31,7 @@ h2 {
 
 h3 {
     font-weight: 600;
-    color: red; /* O títulos em h3 estão destacados em vermelho */
+    color: #333;
     margin-top: 1.5rem;
 }
 
@@ -195,3 +195,4 @@ footer {
     background-color: #218838;
   }
   
+
