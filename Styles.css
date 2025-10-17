@@ -1,198 +1,221 @@
-/* A parte do css eu tentei fazer mas não ficou do jeito que eu queria, então pelo menos nessa parte do estilo do site eu usei a IA, mas vou me aprofundar mais no aprendizado das tags do css! */
-
-/* Importação da fonte do Google Fonts para um visual moderno */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-/* Estilos gerais para o corpo do site */
+/* ======== ESTILOS GERAIS ======== */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f2f5; /* Um cinza claro para um fundo suave */
-    color: #333; /* Cor de texto padrão */
-    line-height: 2.5;
-    margin: 2.5rem;
-    padding: 2.5rem;
-    text-align: center; /* Centraliza todo o conteúdo do corpo */
+  font-family: 'Poppins', sans-serif;
+  background-color: #e9ecf2; /* tom mais suave, cinza-azulado */
+  color: #333;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-/* Estilos para os cabeçalhos */
+main {
+  padding: 2rem;
+}
+
+/* ======== NAVBAR ======== */
+nav {
+  background-color: #111;
+  color: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #D62828;
+}
+
+/* ======== TÍTULOS ======== */
 h1 {
-    font-weight: 700;
-    color: #000; /* Preto, como na bandeira de SP */
-    border-bottom: 2px solid #D62828; /* Vermelho para um toque de destaque */
-    display: inline-block;
-    padding-bottom: 0.5rem;
+  font-weight: 700;
+  color: #000;
+  border-bottom: 2px solid #D62828;
+  display: inline-block;
+  padding-bottom: 0.5rem;
 }
 
 h2 {
-    font-weight: 600;
-    color: #333;
-    margin-top: 2rem;
+  font-weight: 600;
+  color: #222;
+  margin-top: 2rem;
 }
 
 h3 {
-    font-weight: 600;
-    color: #333;
-    margin-top: 1.5rem;
+  color: #444;
 }
 
-/* Estilos para parágrafos */
-p {
-    max-width: 800px;
-    margin: 1rem auto; /* Centraliza parágrafos */
+/* ======== SEÇÕES ======== */
+section {
+  background-color: #f7f8fb; /* cinza claro e agradável */
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  max-width: 900px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Estilos para imagens */
-img {
-    max-width: 150px; /* Limita o tamanho das imagens para não ficarem muito grandes */
-    height: auto;
-    margin: 1rem;
+section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
 }
 
-/* Estilos para listas (ul) */
+/* ======== LISTAS ======== */
 ul {
-    max-width: 600px;
-    margin: 2rem auto;
-    text-align: left;
-    list-style: none; /* Remove os marcadores padrão */
-    padding-left: 0;
+  text-align: left;
+  list-style: none;
+  padding-left: 0;
 }
 
 ul li {
-    background-color: #ffffff;
-    border-left: 5px solid #D62828; /* Barra vermelha para destaque */
-    padding: 0.8rem;
-    margin-bottom: 0.5rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-left: 5px solid #D62828;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
-.Informações ul li {
-    background-color: #ffffff;
-    border-left: 5px solid black; /* Barra vermelha para destaque */
-    padding: 0.8rem;
-    margin-bottom: 0.5rem;
-    border-radius: 5px;
-}
-
-.Destaque h2 {
-    font-weight: 600;
-    color: red;
-    margin-top: 2rem;
-}
-
-/* Estilos para tabelas */
+/* ======== TABELAS ======== */
 table {
-    max-width: 1000px;
-    margin: 2rem auto;
-    width: 100%;
-    border-collapse: collapse;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden; /* Garante que as bordas da tabela sejam arredondadas */
-    text-align: left;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
 }
 
 th, td {
-    padding: 1rem;
-}
-
-td {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.555);
+  padding: 1rem;
+  text-align: center;
 }
 
 th {
-    background-color: #000; /* Preto para o cabeçalho */
-    color: #fff; /* Texto branco */
-    font-weight: 700;
-    text-transform: uppercase;
+  background-color: #D62828;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-/* Estilo para linhas alternadas (efeito zebra) para facilitar a leitura */
-tr:nth-child(even) {
-    background-color: white; /* Fundo cinza claro para linhas pares */
+td {
+  background-color: #fdfdfd;
+  border-bottom: 1px solid #ddd;
 }
 
-tr:nth-child(odd) {
-    background-color: white; /* Fundo branco para linhas ímpares */
+tr:nth-child(even) td {
+  background-color: #f2f4f8;
 }
 
-/* Estilos para links */
+/* ======== IMAGENS ======== */
+img {
+  width: 150px;
+  height: auto;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ======== LINKS ======== */
 a {
-    color: rgb(0, 26, 255); /* Vermelho para links */
-    text-decoration: none; /* Remove o sublinhado */
-    font-weight: 600;
-    transition: color 0.3s ease;
+  color: #0057d9;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  text-decoration: underline;
 }
 
-img {
-    width: 150px;
-    height: 150px;
-} 
-
-/*Feedback do usuário*/
-
-
-/*Rodapé*/
-footer {
-   color: #000;
-
-}
-
-/* Feedback do usuário, abixo esta cada passo da estilização! */
-
-/* Estilo geral do formulário */
+/* ======== FORMULÁRIO DE FEEDBACK ======== */
 .feedback-form {
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Estilo dos grupos de formulário */
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  /* Estilo dos rótulos */
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  /* Estilo dos campos de entrada e textarea */
-  .feedback-form input[type="text"],
-  .feedback-form input[type="email"],
-  .feedback-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-    box-sizing: border-box;
-  }
-  
-  /* Estilo do botão de envio */
-  .feedback-form button[type="submit"] {
-    background-color: #28a745;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Efeito hover no botão */
-  .feedback-form button[type="submit"]:hover {
-    background-color: #218838;
-  }
-  
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f2f4f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #222;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.feedback-form button {
+  background-color: #2a9d8f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-form button:hover {
+  background-color: #21867a;
+}
+
+/* ======== RODAPÉ ======== */
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  img {
+    width: 100px;
+  }
+}
