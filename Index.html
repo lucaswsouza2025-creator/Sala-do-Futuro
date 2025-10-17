@@ -1,165 +1,153 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sala do Futuro</title>
-    <link rel="stylesheet" href="./Styles/Style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sala do Futuro</title>
+  <link rel="stylesheet" href="./Styles/Style.css">
 </head>
-<body>
+<body id="inicio">
 
-    <!--Explicação de cada tag html:
-        head: cabeçalho;
-        body: corpo;
-        footer: rodapé-->
+  <!-- Cabeçalho e Navegação -->
+  <header>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#boletim">Boletim</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#materiais">Materiais</a>
+      <a href="#feedback">Feedback</a>
+    </nav>
+  </header>
 
-    <!--Melhorias que eu preciso aplicar no projeto: construir um campo de feedbacks, e adicionar mais datas das avaliações bimestrais. Fazer principalmente mais algumas apresentações em PowerPoint, pelo menos os conteúdos do currículo das disciplinas de humanas, por exemplo, história e português!-->
+  <main>
+    <section>
+      <h1>Olá, seja Bem-Vindo(a) à Sala do Futuro Paulista! 🏫🎒</h1>
+      <p>Neste site é possível acompanhar o rendimento escolar dos estudantes das escolas públicas de São Paulo, buscando sempre o sucesso acadêmico.</p>
+      <p>Você está no <strong>2° Bimestre</strong> do ano letivo e cursando o <strong>3º Ano do Ensino Médio</strong> — o último ano da escola! 😉</p>
 
-    <!--Apresentando e fazendo uma breve descrição do site. Principalmente é necessário ter div em cada um para complementar com o css-->
-    <h1>Olá seja Bem-Vindo(a) a Sala do Futuro Paulista! 🏫🎒</h1>
-    <p>Neste site é possível os estudantes das escolas públicas de São Paulo, acompanharem e visualizarem todo o seu rendimento escolar dentro da plataforma, buscando sempre o sucesso acadêmico dos alunos.</p>
-    <p>Pelo que as informações apresentam, você está no 2° Bimestre do ano letivo. E o mais importante, você está no 3º Ano do ensino médio o último ano da escola! 😉</p>
+      <img src="./Imagens/Logo_Estado_SãoPaulo.png" alt="Logo do Estado de São Paulo">
+      <img src="./Imagens/Sala_do_Futuro_logo.png" alt="Logo do projeto Sala do Futuro">
+    </section>
 
-    <img src="./Imagens/Logo_Estado_SãoPaulo.png" alt="Estado de São Paulo">
-    <img src="./Imagens/Sala_do_Futuro_logo.png" alt="Sala do Futuro">
+    <section>
+      <h2>Alguns tópicos para entender melhor o projeto 📚</h2>
+      <ul>
+        <li>Boletim com as notas de cada disciplina;</li>
+        <li>Número de frequência e total de aulas do bimestre;</li>
+        <li>Agenda com datas de provas e eventos;</li>
+        <li>Materiais digitais completos para estudo e revisão.</li>
+      </ul>
+    </section>
 
-    <!--Um pouco mais sobre o projeto-->
-
-        <h2>Alguns tópicos para entender melhor o pojeto desenvolvido 📚</h2>
-        
+    <section>
+      <h2>Informações do estudante matriculado 🧑‍🎓👩‍🎓</h2>
+      <div class="informacoes">
         <ul>
-            <li>O boletim com as notas de cada disciplina;</li>
-            <li>Número de frequência em cada máteria e quantidade total de aula dada no bimestre;</li>
-            <li>Agenda escolar com datas de provas, horário de aulas e eventos importantes marcados no dia;</li>
-            <li>Materiais digitais completos de cada disciplina, disponível em formato de slides, servindo como uma material de apoio juntamente com o livro estudantil.</li>
+          <li><strong>Cidade:</strong> Piracicaba</li>
+          <li><strong>Estado:</strong> São Paulo</li>
+          <li><strong>Escola:</strong> Dr. Jorge Coury</li>
+          <li><strong>Período:</strong> Integral</li>
+          <li><strong>Curso Técnico:</strong> Desenvolvimento de Sistemas</li>
+          <li><strong>Turma:</strong> 3ºC</li>
         </ul>
-   
-        <!--Uma breve descrição do estudante-->
+      </div>
+    </section>
 
-        <h2>Informações do estudante matriculado</h2>
-        <p>Abaixo está apenas uma breve definição sobre você! 🧑‍🎓👩‍🎓</p>
+    <section id="boletim">
+      <h2>Boletim Escolar e Frequência 📊</h2>
+      <p>Confira suas notas e faltas em cada disciplina:</p>
 
-        <div class="Informações">
-            <ul>
-                <li>Cidade: Piracicaba;</li>
-                <li>Estado: São Paulo;</li>
-                <li>Escola: E.E Dr. Jorge Coury;</li>
-                <li>Périodo da escola: Integral;</li>
-                <li>Curso Técnico: Desenvolvimento de Sistemas;</li>
-                <li>Turma: 3ºC</li>
-            </ul>
+      <table>
+        <tr>
+          <th></th>
+          <th>História</th>
+          <th>Português</th>
+          <th>Matemática</th>
+          <th>Física</th>
+        </tr>
+        <tr>
+          <td>Notas (mínimo 5 para aprovação)</td>
+          <td>7</td>
+          <td>8</td>
+          <td>6</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Faltas (máximo 40 no bimestre)</td>
+          <td>4</td>
+          <td>5</td>
+          <td>7</td>
+          <td>5</td>
+        </tr>
+      </table>
+
+      <h3>Parabéns! 🎉 Você foi aprovado em todas as disciplinas no 1º Bimestre. Continue assim! 👏</h3>
+    </section>
+
+    <section id="agenda">
+      <h2>Agenda Escolar - Datas de Avaliações 📅</h2>
+      <table>
+        <tr>
+          <th>Matemática</th>
+          <th>Português</th>
+          <th>História</th>
+          <th>Física</th>
+        </tr>
+        <tr>
+          <td>13 de Maio</td>
+          <td>18 de Maio</td>
+          <td>20 de Maio</td>
+          <td>19 de Maio</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="materiais">
+      <h2>Materiais Digitais 📖📚</h2>
+      <p>Baixe os slides das aulas abaixo. Eles servem como material de apoio junto com o livro didático.</p>
+
+      <h3>Português - Literatura Brasileira</h3>
+      <a href="./Apresentações em PowerPoint/Modernismo.pptx" download>📘 Modernismo - 1ª Geração</a>
+
+      <h3>História</h3>
+      <a href="./Apresentações em PowerPoint/Ditadura militar no Brasil.pptx" download>📗 Ditadura Militar no Brasil (1964 - 1985)</a>
+    </section>
+
+    <section id="feedback">
+      <h2>Feedback 💬</h2>
+      <p>Conte-nos sua experiência ou envie uma sugestão de melhoria!</p>
+
+      <form action="#" method="POST" class="feedback-form">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
         </div>
 
-        <h2>Estudante, aqui abaixo você consegue ter a informação sobre as suas notas e frequência, em cada disciplina que fazem parte do currículo acadêmico!</h2>
-
-        <!--Tentar acrecentar mais informações no geral, mas primeiro estão as disciplinas básicas!-->
-
-        <!--Criando uma tabela de números de faltas e o boletim nas disciplinas-->
-        <table>
-            <tr>
-                <!--O primeiro é apenas um espaço vazio!-->
-                <th scope="col"></th>
-                <th scope="col">História</th>
-                <th scope="col">Português</th>
-                <th scope="col">Matemática</th>
-                <th scope="col">Física</th>
-            </tr>
-
-            <!--Notas para cada máteria-->
-            <tr>
-                <td scope="row">Notas de cada disciplina sendo no mínimo 5 para ser aprovado</td>
-                <td scope="row">7</td>
-                <td scope="row">8</td>
-                <td scope="row">6</td>
-                <td scope="row" >8</td> 
-            </tr>
-
-               <!--Número de frequência em cada disciplina-->
-            <tr>
-                <td scope="row">Número total de faltas sendo no máximo 40 no bimestre</td>  
-                <td scope="row">4</td>
-                <td scope="row">5</td>
-                <td scope="row">7</td>
-                <td scope="row">5</td>
-            </tr>
-        </table>
-
-                <h3>Parábens, você foi aprovado em todas as disciplinas no 1º Bimestre, Continue assim! 🎉👍👏</h3>
-            
-            <!--Apenas em exemplo de agenda escolar-->
-            <h2>Agora, abaixo está as datas de algumas avaliações marcados neste Bimestre📅</h2>
-
-            <table>
-                <tr>
-                    <th scope="col">Matématica</th>
-                    <th scope="col">Português</th>
-                    <th scope="col">História</th>
-                    <th scope="col">Física</th>
-                </tr>
-
-                <tr>
-                    <td scope="row">13 de Maio</td>
-                    <td scope="row">18 de Maio</td>
-                    <td scope="row">20 de Maio</td>
-                    <td scope="row">19 de Maio</td>
-                </tr>
-            </table>
-    
-        <!--Materiais digitais em forma de apresentação-->
-        <h2>Materiais digitais</h2>
-        <p>Apresentações em forma de slides. Mas lembrando que precisa abaixar apresentação, pelo menos por enquanto, e os links para abaixar a apresentação estão sempre debaixo do título da aula!</p>
-
-        <h2>Português - Literátura brasileira 📖</h2>
-
-        <h3>Modernismo</h3>
-        <a href="./Apresentações em PowerPoint/Modernismo.pptx">Modernismo 1º Geração</a>
-
-        <h2>História</h2>
-
-        <h3>A Ditadura Militar no Brasil (1964 - 1985)</h3>
-        <a href="./Apresentações/Ditadura militar no Brasil.pptx">Ditadura Militar</a>    
-
-        <div class="content-section">
-
-            <h2 id="feedback">Feedback</h2>
-
-            <p>Por favor, conte a sua experiência sobre o site criado. Se foi uma experiência positiva, conte-nos o que achou. Senão, se não foi agradável, fale-nos sobre possíveis melhorias.</p>
-            <p>Para realizer o feedback, por favor primeiro complete os seguintes campos:</p>
-
-            <form action="#" method="POST" class="feedback-form">
-
-                <div class="form-group">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="Digite o E-mail" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="comentario">Comentário:</label>
-                    <textarea id="comentario" name="comentario" rows="5" placeholder="Seu comentário ou sugestão..." required></textarea>
-                </div>
-
-                <button type="submit">Enviar feedback</button>
-            </form>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
         </div>
-        
-        <!-- Rodapé -->
-        <footer>
-            <p>&copy; 2025 Sala do Futuro. Todos os direitos reservados.</p>
-        </footer>
-    
-    </body>
-    </html>
+
+        <div class="form-group">
+          <label for="comentario">Comentário:</label>
+          <textarea id="comentario" name="comentario" rows="5" placeholder="Seu comentário ou sugestão..." required></textarea>
+        </div>
+
+        <button type="submit">Enviar Feedback</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sala do Futuro. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.querySelector(".feedback-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Obrigado pelo seu feedback! 😊");
+    });
+  </script>
 
 </body>
 </html>
-
-
-
-
-
-
