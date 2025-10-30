@@ -1,244 +1,188 @@
-/* ======== IMPORTAÇÃO DE FONTE ======== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sala do Futuro</title>
+  <link rel="stylesheet" href="./Styles/Style.css">
+</head>
+<body id="inicio">
 
-/* ======== ESTILO GERAL ======== */
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #fcfcfc;
-  color: #333;
-  line-height: 3;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
+  <!--No geral o site web melhorou, mas ainda há muitas atualizações de melhorias!-->
 
-/* ======== CABEÇALHO E NAVEGAÇÃO ======== */
-header {
-  background-color: #000;
-  color: #fff;
-  padding: 1rem 0;
-}
+  <!-- Cabeçalho e Navegação, preciso melhorar esta parte-->
+  <header>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#boletim">Boletim</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#materiais">Materiais</a>
+      <a href="#feedback">Feedback</a>
+    </nav>
+  </header>
 
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
+  <!--Resumo do site-->
+  <main>
+    <section>
+      <h1>Olá, seja Bem-Vindo(a) à Sala do Futuro Paulista! 🏫🎒</h1>
+      <p>Neste site é possível acompanhar o rendimento escolar dos estudantes das escolas públicas de São Paulo, buscando sempre o sucesso acadêmico.</p>
+      <p>Você está no <strong>2° Bimestre</strong> do ano letivo e cursando o <strong>3º Ano do Ensino Médio</strong> — o último ano da escola! 😉</p>
 
-.logo {
-  max-height: 50px;
-}
+      <p>Abaixo, esta o link de definição do nosso projeto 🙂</p>
+      <a href="./Documentos/World/Sobre nós.docx"></a>
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: 600;
-  transition: color 0.3s ease, transform 0.2s ease;
-}
+      <img src="./Imagens/Logo_Estado_SãoPaulo.png" alt="Logo do Estado de São Paulo">
+      <img src="./Imagens/Sala_do_Futuro_logo.png" alt="Logo do projeto Sala do Futuro">
+    </section>
 
-nav a:hover {
-  color: #D62828;
-  transform: scale(1.05);
-}
+    <!--Tópicos do projeto, e como é calculado a média-->
 
-/* ======== TÍTULOS E TEXTOS ======== */
-h1 {
-  font-weight: 700;
-  color: #000;
-  border-bottom: 2px solid #D62828;
-  display: inline-block;
-  padding-bottom: 0.5rem;
-  margin-top: 2rem;
-}
+    <section>
+      <h2>Alguns tópicos para entender melhor o projeto 📚</h2>
+      <ul>
+        <li>Boletim com as notas de cada disciplina;</li>
+        <li>Número de frequência e total de aulas do bimestre;</li>
+        <li>Agenda com datas de provas e eventos;</li>
+        <li>Materiais digitais completos para estudo e revisão;</li>
+        <li>Lista de exercícios com sites de ótima qualidade.</li>
+      </ul>
+    </section>
 
-h2 {
-  font-weight: 600;
-  color: #333;
-  margin-top: 2rem;
-}
+    <h2>Como é calculado a média bimestral?</h2>
+    <p>A média é calculado a partir da média ponderada. Ou seja, todos os métodos de avaliação tem o seu peso único!</p>
 
-h3 {
-  font-weight: 600;
-  color: #333;
-  margin-top: 1.5rem;
-}
+    <h2>Um total de 10 pontos de média escolar 🎒🏫</h2>
+    <h3>Considerando:</h3>
+    <ul>
+      <li><strong> Prova Paulista: </strong> 3 pontos </li>
+      <li><strong> Prova interna de cada disciplina: </strong> 3 pontos </li>
+      <li><strong> Trabalhos de cada matéria: </strong> 2 pontos </li>
+      <li><strong> Frequência: </strong> 1 ponto </li>
+      <li><strong> Participação em aula: </strong> 1 ponto </li>
+    </ul>
 
-p {
-  max-width: 800px;
-  margin: 1rem auto;
-}
+    <!--Informações gerais do aluno-->
+    <section>
+      <h2>Informações do estudante matriculado 🧑‍🎓👩‍🎓</h2>
+      <div class="informacoes">
+        <ul>
+          <li><strong>Cidade:</strong> Piracicaba</li>
+          <li><strong>Estado:</strong> São Paulo</li>
+          <li><strong>Escola:</strong> Dr. Jorge Coury</li>
+          <li><strong>Período:</strong> Integral</li>
+          <li><strong>Curso Técnico:</strong> Desenvolvimento de Sistemas</li>
+          <li><strong>Turma:</strong> 3ºC</li>
+        </ul>
+      </div>
+    </section>
 
-img {
-  max-width: 150px;
-  height: auto;
-  margin: 1rem;
-}
+    <section id="boletim">
+      <h2>Boletim Escolar e Frequência 📊</h2>
+      <p>Confira suas notas e faltas em cada disciplina:</p>
 
-/* ======== LISTAS ======== */
-ul {
-  max-width: 600px;
-  margin: 2rem auto;
-  text-align: left;
-  list-style: none;
-  padding-left: 0;
-}
+      <table>
+        <tr>
+          <th></th>
+          <th>História</th>
+          <th>Português</th>
+          <th>Matemática</th>
+          <th>Física</th>
+        </tr>
+        <tr>
+          <td>Notas (mínimo 5 para aprovação)</td>
+          <td>7</td>
+          <td>8</td>
+          <td>6</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Faltas (máximo 40 no bimestre)</td>
+          <td>4</td>
+          <td>5</td>
+          <td>7</td>
+          <td>5</td>
+        </tr>
+      </table>
 
-ul li {
-  background-color: #ffffff;
-  border-left: 5px solid #D62828;
-  padding: 0.8rem;
-  margin-bottom: 0.5rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+      <h3>Parabéns! 🎉 Você foi aprovado em todas as disciplinas no 1º Bimestre. Continue assim! 👏</h3>
+    </section>
 
-.dados-estudante li {
-  border-left: 5px solid #000;
-}
+    <section id="agenda">
+      <h2>Agenda Escolar - Datas de Avaliações 📅</h2>
+      <table>
+        <tr>
+          <th>Matemática</th>
+          <th>Português</th>
+          <th>História</th>
+          <th>Física</th>
+        </tr>
+        <tr>
+          <td>13 de Maio</td>
+          <td>18 de Maio</td>
+          <td>20 de Maio</td>
+          <td>19 de Maio</td>
+        </tr>
+      </table>
+    </section>
 
-/* ======== TABELAS ======== */
-table {
-  max-width: 1000px;
-  margin: 2rem auto;
-  width: 100%;
-  border-collapse: collapse;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  text-align: left;
-}
+    <section id="materiais">
+      <h2>Materiais Digitais 📖📚</h2>
+      <p>Baixe os slides das aulas abaixo. Eles servem como material de apoio junto com o livro didático.</p>
 
-th, td {
-  padding: 1rem;
-}
+      <h3>Português - Literatura Brasileira</h3>
+      <a href="./Documentos/Apresentações em PowerPoint/Modernismo.pptx" download> Modernismo - 1ª Geração</a>
 
-td {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-}
+      <h3>História</h3>
+      <a href="./Documentos/Apresentações em PowerPoint/Ditadura militar no Brasil.pptx" download> Ditadura Militar no Brasil (1964 - 1985)</a>
+    </section>
 
-th {
-  background-color: #000;
-  color: #fff;
-  font-weight: 700;
-  text-transform: uppercase;
-}
+    <h2>Lista de exercícios 📖</h2>
+    <p>Abaixo, está o link para dois sites diferentes para praticar listas de exercicíos de cada disciplina específica. <strong>O link destacado em azul esta debaixo de cada título! 😉</strong> </p>
 
-tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
+    <!--Melhorar esta parte, esta um debaixo do outro-->
 
-tr:nth-child(odd) {
-  background-color: #ffffff;
-}
+    <h3>Toda Matéria</h3>
+    <a href="https://www.todamateria.com.br/">Liste de exercícios</a>
 
-/* ======== LINKS ======== */
-a {
-  color: rgb(0, 26, 255);
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease, transform 0.2s ease;
-}
+    <h3>Brasil Escola</h3>
+    <a href="https://brasilescola.uol.com.br/">Lista de exercícios</a>
 
-a:hover {
-  color: #D62828;
-  transform: scale(1.05);
-}
+    <!--Finalização-->
+    <section id="feedback">
+      <h2>Feedback 💬</h2>
+      <p>Por favor, conte-nos sua experiência ou envie uma sugestão de melhoria sobre o proojeto desenvolvido!</p>
 
-/* ======== SLIDES ======== */
-.slide-container {
-  background-color: #f4f6fa;
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin: 2rem auto;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-  max-width: 900px;
-}
+      <form action="#" method="POST" class="feedback-form">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
 
-.slide-container a {
-  display: inline-block;
-  margin-top: 1rem;
-}
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        </div>
 
-/* ======== FORMULÁRIO DE FEEDBACK ======== */
-.feedback-form {
-  max-width: 500px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+        <div class="form-group">
+          <label for="comentario">Comentário:</label>
+          <textarea id="comentario" name="comentario" rows="5" placeholder="Seu comentário ou sugestão..." required></textarea>
+        </div>
 
-.form-group {
-  margin-bottom: 15px;
-  text-align: left;
-}
+        <button type="submit">Enviar Feedback</button>
+      </form>
+    </section>
+  </main>
 
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
+  <footer>
+    <p>&copy; 2025 Sala do Futuro. Todos os direitos reservados.</p>
+  </footer>
 
-.feedback-form input[type="text"],
-.feedback-form input[type="email"],
-.feedback-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-  box-sizing: border-box;
-}
+  <script>
+    document.querySelector(".feedback-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Obrigado pelo seu feedback! 😊");
+    });
+  </script>
 
-.feedback-form button[type="submit"] {
-  background-color: #28a745;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.feedback-form button[type="submit"]:hover {
-  background-color: #218838;
-}
-
-/* ======== RODAPÉ ======== */
-footer {
-  background-color: #000;
-  color: #fff;
-  padding: 1rem;
-  margin-top: 3rem;
-}
-
-/* ======== RESPONSIVIDADE ======== */
-@media (max-width: 768px) {
-  .nav-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .feedback-form {
-    width: 90%;
-  }
-
-  table {
-    font-size: 14px;
-    overflow-x: auto;
-  }
-
-  img {
-    max-width: 100px;
-  }
-}
+</body>
+</html>
